@@ -6,12 +6,15 @@ export interface Attraction {
   name: string;
   emoji: string;
   status: AttractionStatus;
+  maintenanceUntil?: string;
   waitMinutes: number | null;
   x: number;
   y: number;
   ticketTypes: TicketType[];
   description: string;
   minHeight?: number;
+  maxWeight?: number;
+  photo?: string;
 }
 
 export const attractions: Attraction[] = [
@@ -24,8 +27,10 @@ export const attractions: Attraction[] = [
     x: 28,
     y: 22,
     ticketTypes: ["standard", "vip"],
-    description: "Экстремальный аттракцион с крутыми виражами",
+    description: "Экстремальный аттракцион с крутыми виражами на скорости 90 км/ч",
     minHeight: 120,
+    maxWeight: 120,
+    photo: "https://cdn.poehali.dev/projects/3ce02da2-35a1-4399-b7c6-09377941fdd5/files/f029e3ab-5594-46ae-ad70-dea9f0850b0c.jpg",
   },
   {
     id: "2",
