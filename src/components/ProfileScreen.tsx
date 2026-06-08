@@ -14,10 +14,10 @@ const savedTickets = [
 
 export default function ProfileScreen() {
   return (
-    <div className="flex flex-col pb-20 min-h-screen">
+    <div className="flex flex-col pb-20 min-h-full overflow-y-auto">
       {/* Header */}
       <div
-        className="px-5 pt-14 pb-6 relative overflow-hidden"
+        className="px-5 pt-16 pb-6 relative overflow-hidden"
         style={{
           background: "linear-gradient(160deg, hsl(220,30%,12%) 0%, hsl(220,20%,10%) 100%)",
         }}

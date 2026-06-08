@@ -15,7 +15,7 @@ const tabs: { key: Screen; icon: string; label: string }[] = [
 export default function BottomNav({ active, onChange }: Props) {
   return (
     <div
-      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-20"
+      className="absolute bottom-0 left-0 right-0 z-20"
       style={{
         background: "hsl(220,18%,10%,0.9)",
         backdropFilter: "blur(20px)",

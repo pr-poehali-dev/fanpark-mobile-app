@@ -26,9 +26,9 @@ export default function MapScreen({ onTicketOpen }: Props) {
   const dimmed = (a: Attraction) => !filtered.find((f) => f.id === a.id);
 
   return (
-    <div className="flex flex-col h-screen pb-20">
+    <div className="flex flex-col h-full pb-20">
       {/* Header */}
-      <div className="glass px-5 pt-12 pb-4 z-20 relative">
+      <div className="glass px-5 pt-16 pb-4 z-20 relative">
         <div className="flex items-center justify-between mb-4">
           <div>
             <p className="text-xs text-muted-foreground font-medium tracking-widest uppercase">Добро пожаловать</p>

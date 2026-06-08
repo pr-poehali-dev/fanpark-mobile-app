@@ -24,10 +24,10 @@ export default function AttractionSheet({ attraction, onClose }: Props) {
   return (
     <>
       <div
-        className="fixed inset-0 bg-black/50 z-30 animate-fade-in"
+        className="absolute inset-0 bg-black/50 z-30 animate-fade-in"
         onClick={onClose}
       />
-      <div className="fixed bottom-20 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-40 px-4 animate-slide-up">
+      <div className="absolute bottom-20 left-0 right-0 z-40 px-4 animate-slide-up">
         <div
           className="rounded-3xl p-5"
           style={{ background: "hsl(220,18%,13%)", border: "1px solid hsl(220,15%,22%)" }}

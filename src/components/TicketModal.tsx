@@ -8,10 +8,10 @@ export default function TicketModal({ onClose }: Props) {
   return (
     <>
       <div
-        className="fixed inset-0 bg-black/70 z-50 animate-fade-in"
+        className="absolute inset-0 bg-black/70 z-50 animate-fade-in"
         onClick={onClose}
       />
-      <div className="fixed inset-0 z-50 flex items-end justify-center px-4 pb-6 animate-slide-up">
+      <div className="absolute inset-0 z-50 flex items-end justify-center px-4 pb-8 animate-slide-up">
         <div
           className="w-full max-w-[430px] rounded-3xl overflow-hidden"
           style={{ background: "hsl(220,18%,11%)", border: "1px solid hsl(220,15%,22%)" }}
