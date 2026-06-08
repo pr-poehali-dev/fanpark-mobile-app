@@ -56,13 +56,6 @@ export default function MapScreen({ onTicketOpen }: Props) {
           <circle cx="50" cy="50" r="38" stroke="hsl(220,40%,50%)" strokeWidth="0.5" fill="none" opacity="0.5" strokeDasharray="3 5" />
         </svg>
 
-        {/* Zone labels */}
-        <div className="absolute top-[8%] left-[50%] -translate-x-1/2 text-[9px] font-semibold tracking-widest uppercase text-muted-foreground/50 select-none">
-          Северная зона
-        </div>
-        <div className="absolute bottom-[12%] left-[50%] -translate-x-1/2 text-[9px] font-semibold tracking-widest uppercase text-muted-foreground/50 select-none">
-          Южная зона
-        </div>
 
         {/* Attraction pins */}
         {attractions.map((a, i) => (
