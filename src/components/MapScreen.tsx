@@ -75,13 +75,7 @@ export default function MapScreen({ onTicketOpen }: Props) {
           <LegendItem color="hsl(0,75%,55%)" label="Закрыт" />
         </div>
 
-        {/* Stats badge */}
-        <div className="absolute bottom-4 right-4 glass rounded-2xl px-3 py-2.5 text-center">
-          <p className="text-xl font-black text-primary leading-none">
-            {attractions.filter(a => a.status === "open").length}
-          </p>
-          <p className="text-[9px] text-muted-foreground font-medium mt-0.5">работает</p>
-        </div>
+
       </div>
 
       {/* Attraction Detail Sheet */}
